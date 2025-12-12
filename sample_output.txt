@@ -1,0 +1,37 @@
+Hospital Triage System - CLI
+Menu:
+1.Register Patient
+2.Add Doctor Slot
+3.Book Routine Appointment
+4.Emergency Arrival
+5.Serve Next
+6.Undo Last
+7.Reports
+8.Exit
+Choose option:
+1
+Patient id: 11
+Name: Alice
+Age: 30
+Severity (0-100): 10
+Patient registered: Patient[id=11,name=Alice,age=30,severity=10]
+
+3
+Patient id: 11
+Doctor id: 1
+Booked routine token: Token[id=1,pid=11,did=1,slot=102,type=ROUTINE]
+
+4
+Patient id: 12
+Severity (lower = more critical): 5
+Emergency inserted: pid=12 severity=5
+
+5
+Served EMERGENCY patient: Patient[id=12,name=...,age=...,severity=...]
+
+7
+=== Reports ===
+Doctor[id=1,name=Dr. Sharma,spec=General] pendingBookedSlots=1 nextFree=Slot[id=101 09:00-09:15 booked=false]
+Routine queue size: 0
+Emergency queue size: 0
+Total registered patients: 2
